@@ -1,0 +1,2 @@
+rootProject.name = "StickyButtonBottomSheet"
+include ':app'
