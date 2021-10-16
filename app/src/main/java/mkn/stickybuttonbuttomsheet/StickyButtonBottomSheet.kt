@@ -98,6 +98,8 @@ class StickyButtonBottomSheet(private val context: Context) {
     private fun dismiss() {
         mBottomSheetDialog?.let {
             it.dismiss()
+            // reset the progress
+            bottomSheetFullScreenProgress.invoke(0f)
             mBottomSheetDialog = null
         }
     }
